@@ -1,0 +1,92 @@
+#artwork-page {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 1366px;
+  height: 3000px;
+  position: relative;
+  // display: none;
+}
+.backwhite {
+  position: absolute;
+  &:last-child {
+    top: 99rem;
+    left: 38rem;
+    z-index: -3;
+  }
+}
+#walking {
+  position: absolute;
+  top: 18rem;
+  left: 58rem;
+  height: 38rem;
+  width: 14rem;
+  background-size: 42.3rem;
+  overflow: hidden;
+  background-image: url(../../images/art_walking.jpg);
+  background-position: 80%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#ashley {
+  position: absolute;
+  top: 7rem;
+  left: 16rem;
+  height: 18rem;
+  width: 32rem;
+  overflow: hidden;
+  background-image: url(../../images/art_ashley.jpg);
+  background-position: 2rem 5rem;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#christine {
+  position: absolute;
+  top: 600px;
+  left: 150px;
+  height: 223px;
+  width: 483px;
+  overflow: hidden;
+  background-image: url(../../images/art_christine.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#purpleDress {
+  position: absolute;
+  top: 62rem;
+  left: 42rem;
+  height: 42rem;
+  width: 42rem;
+  overflow: hidden;
+  background-image: url(../../images/art_purpleDress.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#profile {
+  position: absolute;
+  top: 80rem;
+  left: 9rem;
+  height: 50rem;
+  width: 29rem;
+  overflow: hidden;
+  background-image: url(../../images/art_profile.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#greenDress {
+  position: absolute;
+  top: 2000px;
+  left: 950px;
+  height: 1427px;
+  width: 281px;
+  overflow: hidden;
+  background-image: url(../../images/art_greenDress.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

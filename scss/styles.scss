@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap');
+
+@import 'constants';
+@import 'portfolio';
+
+body {
+  font-family: $fontfamilybody;
+  font-size: 62.5%;
+  color: $grey9;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $grey8;
+}
+
+.nav {
+  color: $grey7;
+  font-family: $fontfamilythick;
+  font-size: 1.2rem;
+  font-family: 'Playfair Display';
+  display: flex;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+
+  .left {
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    h3 {
+      font-family: $fontfamilythin;
+      text-transform: uppercase;
+      font-family: $fontfamilybody;
+      letter-spacing: 0.4rem;
+      justify-self: center;
+      margin-top: 2rem;
+    }
+  }
+  .right {
+    display: flex;
+    padding: 2.4rem;
+  }
+  h1 {
+    font-family: $fontfamilythick;
+    font-size: 4.8rem;
+    margin: 0;
+    letter-spacing: 0.8rem;
+  }
+}
+
+.triangleBottomRight {
+  width: 32rem;
+  height: 18rem;
+  align-self: flex-end;
+  background-color: $iceBlue;
+}
