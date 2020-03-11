@@ -1,27 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap');
 
+@import 'fonts';
+@import 'mixins';
 @import 'constants';
 @import 'portfolio';
+@import 'casestudy';
 
 body {
   font-family: $fontfamilybody;
   font-size: 62.5%;
-  color: $grey9;
+  color: $grey8;
   margin: 0;
   padding: 0;
 }
 
 a {
   text-decoration: none;
-  color: $grey8;
+  color: $grey7;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .nav {
   color: $grey7;
   font-family: $fontfamilythick;
   font-size: 1.2rem;
-  font-family: 'Playfair Display';
   display: flex;
 }
 
@@ -32,35 +40,75 @@ a {
   width: 100%;
 
   .left {
-    padding: 2.4rem;
+    padding: 2.4rem 0.4rem 2.4rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 
     h3 {
-      font-family: $fontfamilythin;
-      text-transform: uppercase;
       font-family: $fontfamilybody;
-      letter-spacing: 0.4rem;
+      text-transform: uppercase;
       justify-self: center;
-      margin-top: 2rem;
+      letter-spacing: 0.2rem;
+      font-size: 0.4rem;
+      margin-top: 1rem;
     }
   }
   .right {
     display: flex;
-    padding: 2.4rem;
+    padding: 2.4rem 0.4rem 2.4rem;
   }
   h1 {
     font-family: $fontfamilythick;
-    font-size: 4.8rem;
+    font-size: 1.6rem;
     margin: 0;
-    letter-spacing: 0.8rem;
+    letter-spacing: 0.4rem;
+  }
+  @include medium-up {
+    .left {
+      h3 {
+        letter-spacing: 0.4rem;
+        font-size: 0.8rem;
+      }
+    }
+    h1 {
+      font-size: 2.8rem;
+      letter-spacing: 0.8rem;
+    }
+  }
+
+  @include large-up {
+    .left {
+      padding: 2.4rem;
+
+      h3 {
+        letter-spacing: 0.4rem;
+        margin-top: 2rem;
+      }
+    }
+    .right {
+      padding: 2.4rem;
+    }
+    h1 {
+      font-size: 4.8rem;
+      letter-spacing: 0.8rem;
+    }
   }
 }
 
 .triangleBottomRight {
-  width: 32rem;
-  height: 18rem;
+  width: 10rem;
+  height: 8rem;
   align-self: flex-end;
   background-color: $iceBlue;
+
+  @include medium-up {
+    width: 20rem;
+    height: 10rem;
+  }
+
+  @include large-up {
+    width: 32rem;
+    height: 18rem;
+  }
 }

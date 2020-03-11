@@ -1,8 +1,11 @@
 #artwork-page {
+  @include small-only {
+    height: 40rem;
+  }
   margin: 0 auto;
   overflow: hidden;
-  width: 1366px;
-  height: 3000px;
+  width: 100%;
+  height: 130rem;
   position: relative;
   // display: none;
 }
@@ -16,31 +19,54 @@
 }
 #walking {
   position: absolute;
-  top: 18rem;
-  left: 58rem;
-  height: 38rem;
-  width: 14rem;
-  background-size: 42.3rem;
+  top: 15rem;
+  left: 10rem;
+  height: 24rem;
+  width: 11rem;
+  background-size: 43.3rem;
   overflow: hidden;
   background-image: url(../../images/art_walking.jpg);
-  background-position: 80%;
+  background-position: -9rem 10rem;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
+  @include medium-up {
+    position: absolute;
+    top: 18rem;
+    left: 58rem;
+    height: 38rem;
+    width: 14rem;
+    background-size: 42.3rem;
+    background-position: 80%;
+  }
 }
 #ashley {
   position: absolute;
-  top: 7rem;
-  left: 16rem;
-  height: 18rem;
-  width: 32rem;
+  top: 2rem;
+  left: 3rem;
+  height: 8.4rem;
+  width: 14rem;
   overflow: hidden;
   background-image: url(../../images/art_ashley.jpg);
-  background-position: 2rem 5rem;
+  background-position: -14rem -5rem;
+  background-size: 52rem;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  @include medium-up {
+    position: absolute;
+    top: 7rem;
+    left: 16rem;
+    height: 18rem;
+    width: 32rem;
+    background-position: 2rem 5rem;
+    background-size: contain;
+  }
 }
 
 #christine {
+  @include small-only {
+    display: none;
+  }
   position: absolute;
   top: 600px;
   left: 150px;
@@ -53,6 +79,9 @@
   background-attachment: fixed;
 }
 #purpleDress {
+  @include small-only {
+    display: none;
+  }
   position: absolute;
   top: 62rem;
   left: 42rem;
@@ -66,6 +95,9 @@
 }
 
 #profile {
+  @include small-only {
+    display: none;
+  }
   position: absolute;
   top: 80rem;
   left: 9rem;
@@ -79,6 +111,9 @@
 }
 
 #greenDress {
+  @include small-only {
+    display: none;
+  }
   position: absolute;
   top: 2000px;
   left: 950px;
@@ -89,4 +124,47 @@
   background-position: right;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+#rect1 {
+  @include small-only {
+    width: 34rem;
+    margin-left: 1rem;
+  }
+  margin-left: 2rem;
+  // @include large-up {
+  //   margin-left: 0;
+  // }
+}
+
+#rect2 {
+  @include small-only {
+    display: none;
+  }
+}
+
+#rect3 {
+  @include small-only {
+    display: none;
+  }
+}
+
+#name1 {
+  @include small-only {
+    margin-top: 3rem;
+    width: 29rem;
+  }
+}
+
+#name2 {
+  @include small-only {
+    margin-top: -23rem;
+    z-index: -2;
+  }
+}
+
+#name3 {
+  @include small-only {
+    display: none;
+  }
 }
